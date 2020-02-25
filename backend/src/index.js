@@ -5,6 +5,7 @@ const routes = require('./routes');
 
 const app = express();
 
+mongoose.set('useCreateIndex', true);
 mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-k9mj1.mongodb.net/wee10?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
